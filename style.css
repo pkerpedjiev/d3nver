@@ -1,10 +1,24 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
 </style>
 
 html,
 body {
   margin: 0
+}
+
+.title {
+  text-transform: uppercase;
+  color: #999;
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #999;
+  font-family: 'Francois One', sans-serif; 
+  font-size: .9rem;
 }
 
 .content {
