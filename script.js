@@ -38,7 +38,13 @@ function upload_button(el, callback) {
 };
 
 function export_graph() {
-    var data_string = JSON.stringify(graph);
+    let newGraph = JSON.parse(JSON.stringify(graph));
+
+    for (let link of newGraph.links) {
+      link.source = link.source.id;
+      link.target = link.target.id;
+    }
+    var data_string = JSON.stringify(newGraph);
     //console.log('data_string', data_string);
     var blob = new Blob([data_string], {type: "application/json"});
     saveAs(blob, 'graph.json');

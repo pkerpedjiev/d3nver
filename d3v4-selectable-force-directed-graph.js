@@ -5,6 +5,8 @@ function createGraph(svg, graph) {
     if (!d3v4)
         d3v4 = d3;
 
+    console.log('graph:', graph);
+    
     var width = +svg.attr("width"),
         height = +svg.attr("height");
     var graph;
