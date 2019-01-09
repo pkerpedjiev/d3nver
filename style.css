@@ -52,8 +52,14 @@ body {
 }
 
 .footer {
+  position: relative;
 }
 
+.export-button {
+  position: absolute;
+  top: 0.8rem;
+  right: 0rem;
+}
 svg {
     border: 1px solid black;
     height: 100%;

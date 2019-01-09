@@ -18,33 +18,35 @@
           A D3-based network viewer.
         </span>
       </div>
-      <!-- <button id="export-button" class="upper-button">Export</button> -->
+      <!--  -->
     </div>
 
     <svg ></svg>
 
     <div class="footer">
+
       <div class="wrap-collabsible">
-        <input id="collapsible" class="toggle" type="checkbox">
-        <label for="collapsible" class="lbl-toggle">Example Input</label>
+        <input id="collapsible" class="toggle" type="checkbox" checked>
+        <label for="collapsible" class="lbl-toggle">Input File Format</label>
         <div class="collapsible-content">
           <div class="content-inner">
             <pre>
-            {
-              "nodes": [
-                {"id": "Valjean", "group": 2},
-                {"id": "Marius", "group": 8},
-                {"id": "Fantine", "group": 3}
-              ],
-              "links": [
-                {"source": "Fantine", "target": "Valjean", "value": 9},
-                {"source": "Marius", "target": "Valjean", "value": 19}
-              ]
-            }
+{
+  "nodes": [
+    {"id": "Valjean", "group": 2},
+    {"id": "Marius", "group": 8},
+    {"id": "Fantine", "group": 3}
+  ],
+  "links": [
+    {"source": "Fantine", "target": "Valjean", "value": 9},
+    {"source": "Marius", "target": "Valjean", "value": 19}
+  ]
+}
             </pre>
           </div>
         </div>
       </div>
+      <button id="export-button" class="export-button upper-button">Export</button>
     </div>
   </div>
 </body>
@@ -55,5 +57,5 @@
 <script src='script.js'> </script>
 <script>
     upload_button("uploader", load_dataset);
-    // export_button("export-button", export_graph);
+    export_button("export-button", export_graph);
 </script>

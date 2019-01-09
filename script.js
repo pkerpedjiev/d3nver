@@ -51,6 +51,7 @@ function export_button(el, callback) {
 }
 
 
-d3.json('miserables.json', function(graph) {
-    createGraph(svg, graph);
+d3.json('miserables.json', function(graphIn) {
+  graph = graphIn;
+  createGraph(svg, graph);
 });
